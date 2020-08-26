@@ -55,6 +55,11 @@ gem 'email_address_validation',
     git: 'https://github.com/ministryofjustice/email_address_validation',
     ref: 'd37caea140a11bbb82f6abfbecef39fef78b97e8'
 
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+end
+
 group :development, :test do
   gem 'awesome_print', require: 'ap'
   gem 'brakeman'
